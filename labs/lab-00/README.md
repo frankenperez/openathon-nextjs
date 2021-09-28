@@ -17,7 +17,7 @@
 
 When the user request a website, instead of getting all the content from the HTML document itself, a bare-bones HTML document is received. The browser also downloads all JavaScript files and executes the scripts to make API requests and fetch the dynamic content. After the server responds, the final content is rendered using DOM processing in the client's browser and the page is fully visible and interactive.
 
-With client-side rendering, the initial page load is naturally a bit slow. However, after that, every subsequent page load is faster. The web application interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. This approach is also known as **single-page application** (**SPA**).
+With client-side rendering, the initial page load is naturally a bit slow. However, after that, every subsequent page load is faster. The web application interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. This model supports **single-page applications** (**SPAs**).
 
 ## Server-side rendering (SSR)
 
@@ -56,12 +56,12 @@ Sites built on this type of architecture often make use of pre-rendered static p
 
 ## Best projects to move to SSR or SSG
 
-Depending on the web application and what are functional and non-functional requirements, paying special attention to SEO and performance, we can define few scenarios to use different rending modes.
+Depending on the web application and what are functional and non-functional requirements,we can define few scenarios to use different rending modes. Static site generation and server-side rendering are two forms of pre-rendering (generates HTML for each page in advance) specially well suited for those that require attention to SEO and performance.
 
 The SSR approach is good for building complex web applications where content and SEO is relevant, require user interaction, rely on a database and the content could change very often. Examples: e-commerce sites, news and blogs and other dynamic content sites.
 
-The SSG mode is a great choice for simple applications in which the content is also relevant but typically doesn’t change based on the user’s actions. It is not suitable for interactive web applications that require to be rebuilt every time new input is provided. Examples: corporate site, landing and other static pages.
+The SSG mode is a great choice for simple applications in which the content is also relevant but typically doesn’t change based on the user’s actions. It is not suitable for interactive web applications that require to be rebuilt every time new input is provided. Examples: corporate site, personal webpage, landing and other static pages.
 
-Finally, in CSR content is rendered in the browser using the client-side JavaScript library increasing the time to be visible for the user, however, rendering process for new requests tends to be faster. It is recommended for SPA sites and dynamic platforms with complex interfaces where content and SEO is less relevant prioritizing the user interaction. Examples: software-as-a-Service (SaaS) solution, customer support portal, backoffice platform, closed community social network, etc.
+Finally, in CSR content is rendered in the browser using the client-side JavaScript library increasing the time to be visible for the user, however, rendering process for new requests tends to be faster. It is recommended for SPAs and dynamic platforms with complex interfaces where content and SEO is less relevant, prioritizing the user interaction. Examples: software-as-a-Service (SaaS) solution, customer support portal, back-office dashboard, closed community social network, etc.
 
 > Learn more about [Rendering strategies on the Web](https://developers.google.com/web/updates/2019/02/rendering-on-the-web).
