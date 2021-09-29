@@ -26,19 +26,18 @@ With client-side rendering, the initial page load is naturally a bit slow. Howev
 
 ### Benefits of CSR
 
-- **Cheap to host**. CSR applications does not require a webserver. They can be hosted on any content delivery network (CDN) or static file host.
-- **Fast refresh**. CSR apps renders the content on a single page without reload or re-render the full page. This saves a lot of both computation power and RAM, so it gets quicker results than server-side rendering (SSR).
+- **Cheap to host**. CSR applications do not require a web server. They can be hosted on any content delivery network (CDN) or static file host.
+- **Fast refresh**. CSR apps render the content on a single page without reloading or re-render the full page. This saves a lot of both computation power and RAM, so it gets quicker results than server-side rendering (SSR).
 - **Lazy loading support**. Client-side rendering supports lazy loading sections of the application to save bandwidth & speed initial load.
 - **Easy to deploy**. Automated deployments can be configured.
-  Fast on the server: Because you are only rendering a blank page it’s very fast to render.
 - **Reusability**. UI components can be reused across multiple pages or routes without having to request the server each time. This enhances usability and on-page performance.
 
 ### Risks of CSR
 
-- **Slow FCP**. A client-side rendered application needs to make additional round-trips to the API server to render the content, causing a slow [first contenful paint](#additional-concepts).
+- **Slow FCP**. A client-side rendered application needs to make additional round-trips to the API server to render the content, causing a slow [first contentful paint](#additional-concepts).
 - **Poor SEO**. Due to the nature of this model, content is not available in the first load and search engine crawlers will face troubles while indexing the page.
 - **Caching**. Browsers cannot cache the HTML structure of the page because the first HTML page is blank.
-- **Poor user experience in slow devices**. Load times can be high on slower laptops and mobile devices anc can lead to users getting frustrated and leaving the web application before it renders.
+- **Poor user experience in slow devices**. Load times can be high on slower laptops and mobile devices and can lead to users getting frustrated and leaving the web application before it renders.
 
 ## Server-side rendering (SSR)
 
@@ -50,7 +49,7 @@ The browser sends a request to the server, which compiles and prepares the HTML 
 
 ### Benefits of SSR
 
-- **SEO Friendly**. SSR offer an SEO (**Search Engine Optimization**) friendly way of building websites and applications when compared to traditional SPAs. Search engines can easily index and crawl content because it can be rendered before the page is loaded.
+- **SEO Friendly**. SSR offers an SEO (**Search Engine Optimization**) friendly way of building websites and applications when compared to traditional SPAs. Search engines can easily index and crawl content because it can be rendered before the page is loaded.
 - **Fast FCP**. A server-side rendered application enables pages to be rendered and visible faster, improving metrics such as [first contentful paint](#additional-concepts) and the user experience, particularly for users with a slow internet connection or outdated devices.
 - **Social Sharing**. With SSR you can programmatically customize the Open Graph meta titles for each page, which is also relevant to SEO and makes your URLs look much better in social media.
 - **Indexation**. SSR web pages will potentially be indexed correctly because web browsers prioritize web pages with faster load times.
@@ -75,10 +74,10 @@ Sites built on this type of architecture often make use of pre-rendered static p
 
 ### Benefits of SSG
 
-- **Cheap to host**. Since a SSG website is just made up of a bunch of different HTML files, you can host your site on any static file hosting service
-- **SEO Friendly**. Static site generation model offer an SEO friendly way of building websites and applications. Search engine crawlers can easily index and access the content of the static pages.
+- **Cheap to host**. Since an SSG website is just made up of a bunch of different HTML files, you can host your site on any static file hosting service
+- **SEO Friendly**. The static site generation model offers an SEO friendly way of building websites and applications. Search engine crawlers can easily index and access the content of the static pages.
 - **Fast FCP**. Since all the pages and content have been generated at build time, the client will start to see content almost immediately.
-- **Security**. Statically generated site is solely composed of static files, the risk of being vulnerable to cyber attacks is minimal.
+- **Security**. A statically generated site is solely composed of static files, the risk of being vulnerable to cyber attacks is minimal.
 
 ### Risks of SSG
 
@@ -88,7 +87,7 @@ Sites built on this type of architecture often make use of pre-rendered static p
 
 ## When to use CSR, SSR or SSG
 
-Depending on the web application and what are functional and non-functional requirements, we can define few scenarios to use different rending modes.
+Depending on the web application and its functional and non-functional requirements, we can define few scenarios to use different rending modes.
 
 In **CSR** content is rendered in the browser using the client-side JavaScript library increasing the time to be visible for the user, however, the rendering process for new requests tends to be faster. It is recommended for SPAs and dynamic platforms with complex interfaces where content and SEO is less relevant, prioritizing the user interaction. Examples: software-as-a-Service (SaaS) solution, customer support portal, back-office dashboard, closed community social network, etc.
 
@@ -107,4 +106,5 @@ Finally, The **SSG** mode is a great choice for simple applications in which the
 ## 📖 Resources to learn more
 
 - [Rendering strategies on the Web](https://developers.google.com/web/updates/2019/02/rendering-on-the-web).
+
 - [The Benefits of Server Side Rendering Over Client Side Rendering](https://medium.com/walmartglobaltech/the-benefits-of-server-side-rendering-over-client-side-rendering-5d07ff2cefe8).
