@@ -108,3 +108,7 @@ Finally, The **SSG** mode is a great choice for simple applications in which the
 - [Rendering strategies on the Web](https://developers.google.com/web/updates/2019/02/rendering-on-the-web).
 
 - [The Benefits of Server Side Rendering Over Client Side Rendering](https://medium.com/walmartglobaltech/the-benefits-of-server-side-rendering-over-client-side-rendering-5d07ff2cefe8).
+
+---
+
+[<< **Home**](../../) | [**Next** >>](../lab-01)

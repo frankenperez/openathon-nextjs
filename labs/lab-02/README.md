@@ -199,4 +199,6 @@ Next.js supports absolute imports and module path aliases. A common pattern is a
 >
 > ![Lab 02 Home Page](../../resources/images/lab02_home.png)
 
-[<< Prev](../lab-01) | [Next >>](../lab-03)
+---
+
+[<< **Prev**](../lab-01) | [**Next** >>](../lab-03)

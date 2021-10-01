@@ -264,4 +264,6 @@ In the next laboratories, we will use some of their features.
 
 - [A 2021 guide about structuring your Next.js project in a flexible and efficient way](https://dev.to/vadorequest/a-2021-guide-about-structuring-your-next-js-project-in-a-flexible-and-efficient-way-472)
 
-[<< Prev](../lab-00) | [Next >>](../lab-02)
+---
+
+[<< **Prev**](../lab-00) | [**Next** >>](../lab-02)
