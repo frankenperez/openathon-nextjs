@@ -1,4 +1,4 @@
-import Header from "app.layouts/Header";
+import { Header } from "app.layouts";
 
 export default function Error404() {
   return (

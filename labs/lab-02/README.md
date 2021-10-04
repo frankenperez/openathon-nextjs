@@ -134,7 +134,7 @@ Next.js automatically optimizes the application for the best performance by **co
 
 **Note**: To link to an external page outside the Next.js app, just use an `<a>` tag without Link.
 
-> ✏ Create a new simple component `src/layout/Header.js` to add the main navigation menu:
+> ✏ Create a new simple component `src/layout/Header/Header.jsx` to add the main navigation menu:
 >
 > ```jsx
 > export default function Header() {
@@ -160,10 +160,18 @@ Next.js automatically optimizes the application for the best performance by **co
 > }
 > ```
 >
+> Create a new index file to export layouts `src/layout/index.js`:
+>
+> ```js
+> import Header from "./Header/Header";
+>
+> export { Header };
+> ```
+>
 > Replace the `<header></header>` tags in all the pages with the new Header component:
 >
 > ```diff
-> + import Header from "../layouts/Header";
+> + import { Header } from "../layouts";
 >
 > [...]
 >
@@ -191,8 +199,8 @@ Next.js supports absolute imports and module path aliases. A common pattern is a
 > Replace the Header imports in all the pages:
 >
 > ```diff
-> - import Header from "../layouts/Header";
-> + import Header from "app.layouts/Header";
+> - import { Header } from "../layouts";
+> + import { Header } from "app.layouts";
 > ```
 >
 > Open http://localhost:3000/ in your browser and ensure the Header component is rendered:
