@@ -39,7 +39,7 @@ src/pages/shop/index.js → /blog
 
 If a user navigates to `/examplepage`, Next will look for that `examplepage.js` file in the pages directory or the `index.js` file in the `examplepage` subdirectory. If there is a default exported function for this page, it will render that as a component. Other wise it will go to the universal route which will be the 404 Page not found. Next.js provides a static 404 page by default without having to add any additional files, but it can be customized by creating a `src/pages/404.js` file.
 
-> ✏ Create a new file `src/pages/404.js` to handle not found routes:
+> ✏ Develop a new file `src/pages/404.js` to handle not found routes:
 >
 > ```jsx
 > export default function Error404() {
@@ -160,7 +160,7 @@ Next.js automatically optimizes the application for the best performance by **co
 > }
 > ```
 >
-> Create a new index file to export layouts `src/layout/index.js`:
+> Generate a new index file to export layouts `src/layout/index.js`:
 >
 > ```js
 > import Header from "./Header/Header";
@@ -181,7 +181,7 @@ Next.js automatically optimizes the application for the best performance by **co
 
 Next.js supports absolute imports and module path aliases. A common pattern is aliasing certain directories like `components` or `layouts` to use absolute paths.
 
-> Create a jsconfig.js file in the next-app root:
+> ✏ Generate a jsconfig.js file in the next-app root:
 >
 > ```json
 > {
