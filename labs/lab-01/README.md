@@ -67,7 +67,7 @@ You also can setup manually by installing `react`, `react-dom` and `next`.
 
 Once the server is running, you should see a page like this one when you access http://localhost:3000:
 
-![Next starter template](../../resources/images/next_starter_template.png)
+![Next starter template](../../resources/images/lab01_home.png)
 
 By using `create-react-app`, a list of scripts is available to facilitate application development at different stages:
 
