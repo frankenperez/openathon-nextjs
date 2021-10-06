@@ -137,25 +137,29 @@ Next.js automatically optimizes the application for the best performance by **co
 > ✏ Create a new simple component `src/layout/Header/Header.jsx` to add the main navigation menu:
 >
 > ```jsx
+> import Link from "next/link";
+>
 > export default function Header() {
 >   return (
->     <div className="app-header">
->       <Link href="/">Fruits & Vegetables</Link>
->       <nav className="main-nav">
->         <ul>
->           <li className="nav-item">
->             <span className="nav-link">
->               <Link href="/about">About Us</Link>
->             </span>
+>     <header className="header__container">
+>       <Link href="/">
+>         <a className="header__logo">Fruits & Veggies</a>
+>       </Link>
+>       <nav>
+>         <ul className="menu">
+>           <li className="menu__item">
+>             <Link href="/about">
+>               <a className="menu__link">About Us</a>
+>             </Link>
 >           </li>
->           <li className="nav-item">
->             <span className="nav-link">
->               <Link href="/shop">Shop</Link>
->             </span>
+>           <li className="menu__item">
+>             <Link href="/shop">
+>               <a className="menu__link">Shop</a>
+>             </Link>
 >           </li>
 >         </ul>
 >       </nav>
->     </div>
+>     </header>
 >   );
 > }
 > ```
