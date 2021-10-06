@@ -95,11 +95,11 @@ src/pages/dashboard/username/settings.js → /dashboard/username/settings
 To access a dynamic collection of pages requires either creating different routes or predefined paths for each one which is highly redundant and unscalable. Next.js allows defining dynamic routes by using square brackets. The bracket syntax in a file or folder name can used to match a dynamic segment:
 
 ```text
-src/pages/shop/[product-slug].js → /shop/:product (/shop/avocado)
+src/pages/shop/[product_slug].js → /shop/:product (/shop/avocado)
 src/pages/dashboard/[username]/settings.js → /:username/settings (/johnsmith/settings)
 ```
 
-> ✏ Rename the file `src/pages/shop/product.js` to `src/pages/shop/[product-slug].js`:
+> ✏ Rename the file `src/pages/shop/product.js` to `src/pages/shop/[product_slug].js`:
 >
 > ```jsx
 > export default function Product() {
