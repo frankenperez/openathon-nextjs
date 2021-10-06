@@ -11,7 +11,7 @@
 
 ## What is Next.js
 
-**[Next.js](https://nextjs.org/)** is an **open-source React front-end development web framework** created by Vercel that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create **static and dynamic Jamstack websites**.
+[**Next.js**](https://nextjs.org/) is an **open-source React front-end development web framework** created by Vercel that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create **static and dynamic Jamstack websites**.
 
 **Note**: [JAMstack](https://jamstack.org/), previously stylized as _JAMStack_ (stands for Javascript, API and Markup), is an architecture designed to make the web faster, more secure, and easier to scale. The core principles of pre-rendering, and decoupling, enable sites and applications to be delivered with greater confidence and resilience than ever before. It has revolutionized the way we think about building for the web by providing a simpler developer experience, better performance, lower cost and greater scalability.
 
