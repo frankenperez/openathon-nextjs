@@ -1,0 +1,16 @@
+/// Mixing to manage Media Query Breakpoints using Sass Map
+/// @param {String} $name - Identifier defined in $breakpoints
+@mixin breakpoint($name) {
+  // If the key exists in the breakpoints map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media (min-width: getEm(map-get($breakpoints, $name))) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map shows a warning
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$name}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

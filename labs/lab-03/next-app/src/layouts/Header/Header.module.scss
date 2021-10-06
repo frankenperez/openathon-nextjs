@@ -1,0 +1,90 @@
+// Header styles
+@import "abstracts/variables";
+@import "base/typography";
+
+.container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $s-size $m-size;
+  background-color: $white-color;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+      #3b3b3b20 0px,
+      #3b3b3b20 1px,
+      #3b3b3b10 1px,
+      #3b3b3b00 4px
+    );
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: $title-font-family;
+  font-size: $l-size;
+  font-weight: 800;
+  color: $main-color;
+  text-decoration: none;
+
+  .logo__title {
+    margin-left: $m-size;
+  }
+
+  .ampersand {
+    font-weight: 400;
+    font-size: $xl-size;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.menu__item {
+  padding: $s-size $m-size;
+  line-height: $l-size;
+}
+
+.menu__link {
+  position: relative;
+  color: $text-color;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: -($xl-size);
+    content: "";
+    width: 100%;
+    height: 0px;
+    background: $accent-color;
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    &:after {
+      height: 4px;
+    }
+  }
+}

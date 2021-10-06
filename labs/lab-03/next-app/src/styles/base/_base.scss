@@ -1,0 +1,70 @@
+// Set up box model on the root element
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $m-size;
+  font-weight: 400;
+  line-height: $xl-size;
+  color: $text-color;
+}
+
+// All elements from the DOM inherit from the parent box-sizing
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font-family;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: $xxl-size;
+}
+
+h2 {
+  font-size: $xl-size;
+}
+
+h3 {
+  font-size: $l-size;
+}
+
+h4 {
+  font-size: $m-size;
+}
+
+h5 {
+  font-size: $m-size;
+}
+
+h6 {
+  font-size: $m-size;
+}
+
+a {
+  color: $alt-color;
+  text-decoration: underline;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+
