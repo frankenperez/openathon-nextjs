@@ -1,5 +1,15 @@
 # Lab 03 - Styling, Assets and Layouts
 
+- [Lab 03 - Styling, Assets and Layouts](#lab-03---styling-assets-and-layouts)
+  - [Styling](#styling)
+    - [Adding Sass](#adding-sass)
+    - [Adding a global stylesheet](#adding-a-global-stylesheet)
+    - [Adding Component-Level Sass](#adding-component-level-sass)
+  - [Assets](#assets)
+    - [Images](#images)
+    - [Fonts](#fonts)
+  - [Layouts](#layouts)
+
 ## Styling
 
 Next.js has built-in support for CSS and Sass which allows to import .css and .scss/.sass files. This is possible because Next.js extends the concept of import beyond JavaScript.
@@ -386,4 +396,6 @@ Many of the components of a Next.js application are often reused between pages. 
 >
 > ![Lab 03 Home Page](../../resources/images/lab03_home.png)
 
-[<< Prev](../lab-02) | [Next >>](../lab-04)
+---
+
+[<< **Prev**](../lab-02) | [**Next** >>](../lab-04)
