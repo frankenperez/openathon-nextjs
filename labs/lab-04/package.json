@@ -1,0 +1,15 @@
+{
+  "name": "next-and-json-server",
+  "version": "1.0.0",
+  "description": "Run Next.js and JSON Server",
+  "scripts": {
+    "server:install": "cd ./server && npm install",
+    "start:next": "cd ./next-app && npm run dev",
+    "start:server": "cd ./server && npm run start",
+    "start": "concurrently \"npm run start:next\" \"npm run start:server\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
