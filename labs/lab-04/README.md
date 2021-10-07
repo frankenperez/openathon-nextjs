@@ -154,7 +154,7 @@ Use this approach for private or user-specific pages, where SEO is not relevant 
 
 ## Environment Variables
 
-Next.js has built-in support for environment variables. An **environment variables** is a predetermined value in a system used to configure a value that describe the environment.
+Next.js has built-in support for environment variables. An **environment variable** is a predetermined value in a system used to configure a value that describes the environment.
 
 The `.env` file lets us customize the individual environment variables easily with the syntax `ENV_VARIABLE=VALUE`.
 
@@ -176,7 +176,7 @@ By default environment variables are only available in the Node.js environment. 
 
 - It performs automatic JSON data transformation and supports upload progress.
 - It has ways to abort a request or to set a response timeout.
-- It will reject the request promise if a response with status code in the 4xx or 5xx range is returned.
+- It will reject the request promise if a response with a status code in the 4xx or 5xx range is returned.
 - It automatically sends cookies back to the server when making a request and has built-in XSRF protection.
 - It can be used in both: browser and Node.js server and facilitates sharing JavaScript code between them.
 
