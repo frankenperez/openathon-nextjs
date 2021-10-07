@@ -51,7 +51,7 @@ There are several [options](https://nextjs.org/docs/api-reference/create-next-ap
 
 You also can setup manually by installing `react`, `react-dom` and `next`.
 
-> ✏ Create a new root directory for the project.
+> ✏ Create a new root directory for the project, e.g.: `fruits-and-veggies`.
 >
 > Run `npx create-next-app` or `yarn create next-app`.
 >
