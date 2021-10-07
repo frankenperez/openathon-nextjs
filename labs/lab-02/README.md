@@ -16,7 +16,9 @@ src/pages/about.js → /about
 src/pages/shop/index.js → /blog
 ```
 
-> ✏ Create a new file `src/pages/shop/index.js` with the following content:
+> ✏ **Task**
+>
+> Create a new file `src/pages/shop/index.js` with the following content:
 >
 > ```jsx
 > export default function Shop() {
@@ -39,7 +41,9 @@ src/pages/shop/index.js → /blog
 
 If a user navigates to `/examplepage`, Next will look for that `examplepage.js` file in the pages directory or the `index.js` file in the `examplepage` subdirectory. If there is a default exported function for this page, it will render that as a component. Other wise it will go to the universal route which will be the 404 Page not found. Next.js provides a static 404 page by default without having to add any additional files, but it can be customized by creating a `src/pages/404.js` file.
 
-> ✏ Develop a new file `src/pages/404.js` to handle not found routes:
+> ✏ **Task**
+>
+> Develop a new file `src/pages/404.js` to handle not found routes:
 >
 > ```jsx
 > export default function Error404() {
@@ -69,7 +73,9 @@ src/pages/shop/product.js → /shop/product
 src/pages/dashboard/username/settings.js → /dashboard/username/settings
 ```
 
-> ✏ Create a new file `src/pages/shop/product.js` with the following content:
+> ✏ **Task**
+>
+> Create a new file `src/pages/shop/product.js` with the following content:
 >
 > ```jsx
 > export default function Product() {
@@ -99,7 +105,9 @@ src/pages/shop/[product_slug].js → /shop/:product (/shop/avocado)
 src/pages/dashboard/[username]/settings.js → /:username/settings (/johnsmith/settings)
 ```
 
-> ✏ Rename the file `src/pages/shop/product.js` to `src/pages/shop/[product_slug].js`:
+> ✏ **Task**
+>
+> Rename the file `src/pages/shop/product.js` to `src/pages/shop/[product_slug].js`:
 >
 > ```jsx
 > export default function Product() {
@@ -134,7 +142,9 @@ Next.js automatically optimizes the application for the best performance by **co
 
 **Note**: To link to an external page outside the Next.js app, just use an `<a>` tag without Link.
 
-> ✏ Create a new simple component `src/layout/Header/Header.jsx` to add the main navigation menu:
+> ✏ **Task**
+>
+> Create a new simple component `src/layout/Header/Header.jsx` to add the main navigation menu:
 >
 > ```jsx
 > import Link from "next/link";
@@ -185,7 +195,9 @@ Next.js automatically optimizes the application for the best performance by **co
 
 Next.js supports absolute imports and module path aliases. A common pattern is aliasing certain directories like `components` or `layouts` to use absolute paths.
 
-> ✏ Generate a jsconfig.js file in the next-app root:
+> ✏ **Task**
+>
+> Generate a jsconfig.js file in the next-app root:
 >
 > ```json
 > {
