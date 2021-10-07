@@ -1,0 +1,6 @@
+/// Function that return a fixed value as relative based on context or font-size
+/// @param {Map} $pixels - Pixels to be transformed to em
+/// @param {Map} $context - Context to calculate the relative size
+@function getEm($pixels, $context: $m-font-size) {
+  @return ($pixels / $context) * 1em;
+}

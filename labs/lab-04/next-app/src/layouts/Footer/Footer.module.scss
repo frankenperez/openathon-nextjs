@@ -1,0 +1,10 @@
+@import "abstracts/variables";
+
+.container {
+  position: sticky;
+  bottom: 0;
+  background-color: $light-gray-color;
+  padding: $s-size;
+  font-size: $s-size;
+  text-align: center;
+}
