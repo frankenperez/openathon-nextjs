@@ -5,17 +5,19 @@
   - [Main features of Next.js](#main-features-of-nextjs)
   - [Installation](#installation)
   - [Next.js application structure](#nextjs-application-structure)
+  - [Linters and Formatters](#linters-and-formatters)
+    - [ESLint](#eslint)
+    - [Prettier](#prettier)
   - [Pages in Next.js](#pages-in-nextjs)
     - [Special custom pages](#special-custom-pages)
+  - [📋 Glossary](#-glossary)
   - [📖 Resources to learn more](#-resources-to-learn-more)
 
 ## What is Next.js
 
-[**Next.js**](https://nextjs.org/) is an **open-source React front-end development web framework** created by Vercel that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create **static and dynamic Jamstack websites**.
+[**Next.js**](https://nextjs.org/) is an **open-source React front-end development web framework** created by Vercel that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create **static and dynamic [Jamstack](#-additional-concepts) websites**.
 
-**Note**: [JAMstack](https://jamstack.org/), previously stylized as _JAMStack_ (stands for Javascript, API and Markup), is an architecture designed to make the web faster, more secure, and easier to scale. The core principles of pre-rendering, and decoupling, enable sites and applications to be delivered with greater confidence and resilience than ever before. It has revolutionized the way we think about building for the web by providing a simpler developer experience, better performance, lower cost and greater scalability.
-
-Next.js is an integral part of the React ecosystem developed specifically to address the SSR/SSG challenge for React applications.
+Next.js is an integral part of the React ecosystem developed specifically to address the SSR/SSG challenge for React applications and supports IE11 and all modern browsers.
 
 ## Main features of Next.js
 
@@ -51,7 +53,9 @@ There are several [options](https://nextjs.org/docs/api-reference/create-next-ap
 
 You also can setup manually by installing `react`, `react-dom` and `next`.
 
-> ✏ Create a new root directory for the project, e.g.: `fruits-and-veggies`.
+> ✏ **Task**
+>
+> Create a new root directory for the project. To follow the current example: `fruits-and-veggies`.
 >
 > Run `npx create-next-app` or `yarn create next-app`.
 >
@@ -164,7 +168,9 @@ next-app
 └── readme.md
 ```
 
-> ✏ Because this is a small Next.js application for learning purposes and to keep it simple enough, we will use the first design pattern.
+> ✏ **Task**
+>
+> Because this is a small Next.js application for learning purposes and to keep it simple enough, we will use the first design pattern.
 >
 > Move the `pages` and `styles` folders and their content to a new `src` directory.
 >
@@ -195,6 +201,52 @@ next-app
 > ```
 >
 > If your development server is still running, visit http://localhost:3000 to check your application works.
+
+## Linters and Formatters
+
+### ESLint
+
+Next.js provides an integrated [ESLint](https://eslint.org/) experience out of the box, automatically installing `eslint` and `eslint-config-next` as development dependencies in the application and creating an `.eslintrc.json` file in the root directory.
+
+> ✏ **Task**
+>
+> Run `npm run lint` or `yarn lint` to set up ESLint if it was not already configured during the installation process.
+>
+> Open the `.eslintrc.json` file and update its configuration:
+>
+> ```json
+> {
+>   "extends": ["next/babel", "next/core-web-vitals"]
+> }
+> ```
+
+### Prettier
+
+[Prettier](https://prettier.io/) is an opinionated code formatter with support for many languages to enforce a consistent style by parsing the application code and re-printing it with its own rules.
+
+ESLint contains code formatting rules which can conflict with the Prettier setup. It is recommended to include `eslint-config-prettier` in the ESLint config to make ESLint and Prettier work together, disabling any linting rule that might interfere with an existing Prettier rule, and `eslint-plugin-prettier` to run Prettier analysis as part of ESLint and reports differences as individual ESLint issues.
+
+> ✏ **Task**
+>
+> Let’s add Prettier and the recommended plugins to work with ESLint:
+>
+> ```bash
+> npm install -D prettier eslint-config-prettier eslint-plugin-prettier
+> #or
+> yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+> ```
+>
+> Create a new file `.prettierrc` in the root directory to customize the configuration:
+>
+> ```json
+> {
+>   "printWidth": 100,
+>   "tabWidth": 2,
+>   "trailingComma": "none"
+> }
+> ```
+>
+> Optionally, you can install the [Prettier Formatter extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code
 
 ## Pages in Next.js
 
@@ -259,6 +311,10 @@ There are special pages in Next.js in the pages directory that are prefixed with
 - `_document.js`. It is a custom component that Next.js uses to augment the `<html>` and `<body>` tags in the application.
 
 In the next laboratories, we will use some of their features.
+
+## 📋 Glossary
+
+- [JAMstack](https://jamstack.org/), previously stylized as _JAMStack_ (stands for Javascript, API and Markup), is an architecture designed to make the web faster, more secure, and easier to scale. The core principles of pre-rendering, and decoupling, enable sites and applications to be delivered with greater confidence and resilience than ever before. It has revolutionized the way we think about building for the web by providing a simpler developer experience, better performance, lower cost and greater scalability.
 
 ## 📖 Resources to learn more
 
