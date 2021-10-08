@@ -11,7 +11,7 @@
     - [Benefits of SSG](#benefits-of-ssg)
     - [Risks of SSG](#risks-of-ssg)
   - [When to use CSR, SSR or SSG](#when-to-use-csr-ssr-or-ssg)
-  - [📋 Additional concepts](#-additional-concepts)
+  - [📋 Glossary](#-glossary)
   - [📖 Resources to learn more](#-resources-to-learn-more)
 
 ## Client-side rendering (CSR) and single-page applications (SPA)
@@ -97,11 +97,11 @@ The **SSR** approach is good for building complex web applications where content
 
 Finally, The **SSG** mode is a great choice for simple applications in which the content is also relevant but typically doesn’t change based on the user’s actions. It is not suitable for interactive web applications that require to be rebuilt every time new input is provided. Examples: corporate site, personal webpage, landing and other static pages.
 
-## 📋 Additional concepts
+## 📋 Glossary
 
-- **FCP**: First Contentful Paint. It is a user-centric metric for measuring perceived page load speed and refers to the time it takes for the browser to render the first bit of content in the DOM since the content was requested, providing the first feedback to the user that the page is actually loading.
-
-- **TTFB**: Time To First Byte. It is a metric for determining the responsiveness of a web server and measures the amount of time between the browser requesting a page from the server and the download of the first content on the page.
+- **FCP**: [First Contentful Paint](https://web.dev/fcp/). It is a user-centric metric for measuring perceived page load speed and refers to the time it takes for the browser to render the first bit of content in the DOM since the content was requested, providing the first feedback to the user that the page is actually loading.
+- **LCP**: [Largest Contentful Paint](https://web.dev/lcp/). It is a user-centric metric for measuring perceived load speed and refers to the time it takes for the browser to get the largest/main element on the page visible.
+- **TTFB**: [Time To First Byte](https://developer.mozilla.org/en-US/docs/Glossary/time_to_first_byte). It is a metric for determining the responsiveness of a web server and measures the amount of time between the browser requesting a page from the server and the download of the first content on the page.
 
 ## 📖 Resources to learn more
 
