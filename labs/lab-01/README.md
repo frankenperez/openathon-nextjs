@@ -216,7 +216,7 @@ Next.js provides an integrated [ESLint](https://eslint.org/) experience out of t
 >
 > ```json
 > {
->   "extends": ["next/babel", "next/core-web-vitals"]
+>   "extends": ["next/core-web-vitals"]
 > }
 > ```
 
@@ -243,6 +243,14 @@ ESLint contains code formatting rules which can conflict with the Prettier setup
 >   "printWidth": 100,
 >   "tabWidth": 2,
 >   "trailingComma": "none"
+> }
+> ```
+>
+> Open the `.eslintrc.json` file and update its configuration:
+>
+> ```json
+> {
+>   "extends": ["next/core-web-vitals", "prettier"]
 > }
 > ```
 >

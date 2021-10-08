@@ -6,8 +6,8 @@ export default function Home() {
         <h1>About us</h1>
         <h2>This is a starter Next.js E-commerce store</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec
-          vehicula sem. Ut ultricies lorem a auctor porttitor.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec vehicula sem. Ut
+          ultricies lorem a auctor porttitor.
         </p>
       </main>
       <footer>
