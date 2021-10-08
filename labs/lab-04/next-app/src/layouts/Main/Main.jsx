@@ -6,10 +6,7 @@ export default function Main({ children }) {
   return (
     <>
       <Head>
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Learn how to build a personal website using Next.js" />
       </Head>
       <Header />
       <main className={styles.container}>{children}</main>

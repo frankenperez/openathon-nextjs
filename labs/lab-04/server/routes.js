@@ -4,6 +4,6 @@ const productsRoute = require("./data/products.json");
 module.exports = function getRoutes() {
   return {
     users: usersRoute,
-    products: productsRoute,
+    products: productsRoute
   };
 };
