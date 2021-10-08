@@ -167,7 +167,7 @@ By default environment variables are only available in the Node.js environment. 
 > Create a new `next-app/.env.local` file and define the following variables:
 >
 > ```bash
-> API_URL=http://localhost:3001/
+> NEXT_PUBLIC_API_URL=http://localhost:3001/
 > ```
 
 ## Axios
