@@ -75,7 +75,7 @@ export async function getStaticPaths() {
   const products = await res.json();
   // Get the paths to pre-render based on products
   const paths = products.map((product) => ({
-    params: { product_slug: product.product_slug }
+    params: { product_slug: product.slug }
   }));
   // { fallback: false } means other routes
   // should result in a 404 page.
