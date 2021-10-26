@@ -10,7 +10,7 @@
   - [Using getStaticPaths](#using-getstaticpaths)
   - [📖 Resources to learn more](#-resources-to-learn-more)
 
-**Note**: Static Site Generation fundamental concepts were addressed in detail in [Lab 00](./../lab-00/README.md#server-side-rendering-ssr)
+**Note**: Static Site Generation fundamental concepts were addressed in detail in [Lab 00](./../lab-00/README.md#static-site-generation-ssg)
 
 ## Static Generation without Data
 
@@ -528,7 +528,7 @@ In development, `getStaticPaths` runs on every request, but it runs only at buil
 > }
 > ```
 >
-> Create a new `ProductDetail` component and the related Sass module and export it  in `src/components/index.js`:
+> Create a new `ProductDetail` component and the related Sass module and export it in `src/components/index.js`:
 >
 > ```jsx
 > // Components
