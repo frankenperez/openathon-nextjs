@@ -1,5 +1,6 @@
 // Abstracts: Configuration and helpers
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 // Vendors
 @import "./vendors/normalize";
@@ -11,7 +12,6 @@
 
 // Layout and sections
 // @import "./layout/grid";
-// @import "./layout/header";
 
-// Components
-// @import "./components/navigation";
+// Pages
+@import "./pages/shop";

@@ -3,6 +3,6 @@
 .container {
   max-width: $wrapper-width;
   margin: auto;
-  padding: $xxl-size 0;
+  padding: $xxl-size $m-size;
   width: 100%;
 }

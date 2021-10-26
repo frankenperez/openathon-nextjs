@@ -20,13 +20,15 @@ $xxl-size: 2rem !default;
 
 /// Wrapper width
 /// @type Length
-$wrapper-width: 1220px;
+$wrapper-width: 1220px !default;
 
 /// Default colors
 /// @type Color
 $white-color: #fff;
 $light-gray-color: #f8f8f8;
+$alt-gray-color: #e0e0e0;
 $gray-color: #ccc;
+$dark-gray-color: #aaa;
 $light-black: #333;
 $black-color: #000;
 

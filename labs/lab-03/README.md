@@ -94,6 +94,7 @@ CSS Module locally scopes CSS by automatically creating a unique class name. Thi
 >   align-items: center;
 >   justify-content: space-between;
 >   padding: $s-size $m-size;
+>   z-index: 10;
 >
 >   &:after {
 >     position: absolute;
@@ -273,7 +274,7 @@ To add a web font to your Next.js application, use the [**Head**](https://nextjs
 >           <link
 >             rel="preconnect"
 >             href="https://fonts.gstatic.com"
->             crossorigin
+>             crossOrigin="anonymous"
 >           />
 >           <link
 >             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
@@ -333,6 +334,7 @@ Many of the components of a Next.js application are often reused between pages. 
 >   padding: $s-size;
 >   font-size: $s-size;
 >   text-align: center;
+>   z-index: 9;
 > }
 > ```
 >
@@ -386,7 +388,8 @@ Many of the components of a Next.js application are often reused between pages. 
 >   return (
 >     <Main>
 >       <h1>Shop</h1>
->       <h2>Shop main page</h2>
+>       <h2>Fresh fruits, vegetables and organic products</h2>
+>       <p>Organic and seasonal fruits and vegetables direct from farmers.</p>
 >     </Main>
 >   );
 > }

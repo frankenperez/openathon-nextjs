@@ -1,3 +1,5 @@
+@import "functions";
+
 /// Mixing to manage Media Query Breakpoints using Sass Map
 /// @param {String} $name - Identifier defined in $breakpoints
 @mixin breakpoint($name) {
