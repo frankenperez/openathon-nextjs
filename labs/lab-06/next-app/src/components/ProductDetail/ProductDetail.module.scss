@@ -1,0 +1,53 @@
+// ProductCard styles
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/typography";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $m-size;
+
+  @include breakpoint("medium") {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint("large") {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-family: $title-font-family;
+  font-size: $l-size;
+  font-weight: 800;
+  color: $accent-color;
+  text-align: right;
+}
+
+.category {
+  font-size: $l-size;
+}
+
+.manufacturer {
+  color: $dark-gray-color;
+}
+
+.reference {
+  font-size: $s-size;
+  color: $dark-gray-color;
+}
+
+.description {
+  margin: $m-size 0;
+}
