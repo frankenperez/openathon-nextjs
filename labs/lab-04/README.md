@@ -182,7 +182,7 @@ By default environment variables are only available in the Node.js environment. 
 
 > ✏ **Task**
 >
-> Install Axios in `next-app` by running `npm install axios` or `yarn add axios`
+> Install Axios in `next-app` directory by running `npm install axios` or `yarn add axios`
 
 ## 📖 Resources to learn more
 
