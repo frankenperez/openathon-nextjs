@@ -1,0 +1,13 @@
+{
+  "name": "server-api",
+  "version": "1.0.0",
+  "description": "Server API for web application",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  }
+}

@@ -1,0 +1,64 @@
+// ProductCard styles
+@import "abstracts/variables";
+@import "base/typography";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    transform: scale(1.025);
+  }
+}
+
+.figure {
+  border-top-left-radius: $xs-size;
+  border-top-right-radius: $xs-size;
+  overflow: hidden;
+  background: $alt-gray-color;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.link {
+  color: $main-color;
+}
+
+.body {
+  flex: 1;
+  padding: 0 $m-size $m-size;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: $alt-gray-color;
+  border-bottom-left-radius: $xs-size;
+  border-bottom-right-radius: $xs-size;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.price {
+  font-family: $title-font-family;
+  font-size: $m-size;
+  font-weight: 800;
+  color: $accent-color;
+  text-align: right;
+}
+
+.manufacturer {
+  font-size: $s-size;
+  color: $dark-gray-color;
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "app.layouts": ["layouts"],
+      "app.components": ["components"],
+      "app.services": ["services"]
+    }
+  }
+}

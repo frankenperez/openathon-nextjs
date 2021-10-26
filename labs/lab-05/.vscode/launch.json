@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next: Server-side Debug",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/next-app/node_modules/.bin/next",
+      "runtimeArgs": ["-p", "3000"],
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/next-app",
+      "preLaunchTask": "Run server",
+      "postDebugTask": "Terminate running tasks"
+    },
+    {
+      "name": "Next: Client-side Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/next-app"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next: Full-stack debug",
+      "configurations": ["Next: Server-side Debug", "Next: Client-side Debug"]
+    }
+  ]
+}
