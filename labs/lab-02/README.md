@@ -1,5 +1,14 @@
 # Lab 02 - Routing and Navigation
 
+- [Lab 02 - Routing and Navigation](#lab-02---routing-and-navigation)
+  - [Routing](#routing)
+    - [Index Routes](#index-routes)
+    - [Nested Routes](#nested-routes)
+    - [Dynamic Routes](#dynamic-routes)
+  - [Navigation](#navigation)
+    - [Link Component](#link-component)
+  - [📖 Resources to learn more](#-resources-to-learn-more)
+
 ## Routing
 
 Routing is the process through which the user is navigated to different pages on a website. **Routes** in Next.js are based on the name of the files and the folder structure in the **pages directory**.
@@ -223,6 +232,11 @@ Next.js supports absolute imports and module path aliases. A common pattern is a
 > Open http://localhost:3000/ in your browser and ensure the Header component is rendered:
 >
 > ![Lab 02 Home Page](../../resources/images/lab02_home.png)
+
+## 📖 Resources to learn more
+
+- [**Catch All Routes**](https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes)
+- [**Shallow Routing**](https://nextjs.org/docs/routing/shallow-routing)
 
 ---
 
